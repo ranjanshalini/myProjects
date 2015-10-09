@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Url Details</h3>
+
+<table class="table table-striped">
+  <thead><tr>
+    <th>Edit</th>
+    <th>URL Name</th>
+    <th>URL Password</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody><tr ng-repeat="url in urls">
+    <td>
+      <button class="btn" ng-click="editUrl(url.id)">
+        <span class="glyphicon glyphicon-pencil"></span>  Edit
+      </button>
+    </td>
+    <td>{{ url.uName }}</td>
+    <td>{{ url.pwd }}</td>
+    <td>{{ url.desc}}</td>
+  </tr></tbody>
+</table>
+
+</body>
+</html>
